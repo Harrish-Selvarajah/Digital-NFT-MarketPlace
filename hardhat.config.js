@@ -6,13 +6,17 @@ const privateKey = fs.readFileSync(".secret").toString().trim() || "012345678901
 module.exports = {
   defaultNetwork: "hardhat",
   networks: {
-    hardhat: {
-      chainId: 1337
-    },
+    // hardhat: {
+    //   chainId: 1337
+    // },
 //  mumbai: {
 //    url: "https://rpc-mumbai.maticvigil.com",
 //    accounts: [privateKey]
 //  }
+      ropsten: {
+        url: `https://eth-ropsten.alchemyapi.io/v2/key`, // add your key here
+        accounts: [privateKey]
+      }
   },
   solidity: {
     version: "0.8.4",

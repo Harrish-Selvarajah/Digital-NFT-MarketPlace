@@ -27,6 +27,11 @@ function MyApp({ Component, pageProps }) {
               Creator Dashboard
             </a>
           </Link>
+          <Link href="/wallet">
+            <a className="mr-6 text-pink-500">
+              Wallet
+            </a>
+          </Link>
         </div>
       </nav>
       <Component {...pageProps} />
